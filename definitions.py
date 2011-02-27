@@ -74,7 +74,7 @@ SHAPEFILES = {
         'singular': 'ANC District',
         'kind_first': False,
         'ider': utils.simple_namer(['GIS_ID']),
-        'namer': utils.simple_namer(['NAME']),
+        'namer': utils.simple_namer(['ANC_ID']),
         'authority': 'DC Office of the Chief Technology Officer',
         'domain': 'Washington, DC',
         'last_updated': date(2011, 2, 26),
@@ -139,4 +139,17 @@ SHAPEFILES = {
         'encoding': '',
     },
     
+    'Voting Precincts (2008)': {
+        'file': 'VotePre08Ply/VotePre08Ply.shp',
+        'singular': 'Voting Precint',
+        'kind_first': False,
+        'ider': utils.simple_namer(['GIS_ID']),
+        'namer': utils.simple_namer(['NAME']),
+        'authority': 'DC Office of the Chief Technology Officer',
+        'domain': 'Washington, DC',
+        'last_updated': date(2011, 2, 26),
+        'href': '',
+        'notes': '',
+        'encoding': '',
+    },   
 }
