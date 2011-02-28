@@ -36,9 +36,9 @@ SHAPEFILES = {
     #    'notes': '',
     #    # Encoding of the text fields in the shapefile, i.e. 'utf-8'. If this is left empty 'ascii' is assumed
     #    'encoding': ''
-        # SRID of the geometry data in the shapefile if it can not be inferred from an accompanying .prj file
-        # This is normally not necessary and can be left undefined or set to an empty string to maintain the default behavior
-        #'srid': ''
+    #    # SRID of the geometry data in the shapefile if it can not be inferred from an accompanying .prj file
+    #    # This is normally not necessary and can be left undefined or set to an empty string to maintain the default behavior
+    #    #'srid': ''
     #},
     
     'Wards': {
@@ -147,9 +147,66 @@ SHAPEFILES = {
         'namer': utils.simple_namer(['NAME']),
         'authority': 'DC Office of the Chief Technology Officer',
         'domain': 'Washington, DC',
-        'last_updated': date(2011, 2, 26),
+        'last_updated': date(2011, 2, 27),
         'href': '',
         'notes': '',
         'encoding': '',
-    },   
+    },
+    
+    'Elementary School Attendance Boundaries ': {
+        'file': 'ESBndyPly/ESBndyPly.shp',
+        'singular': 'Elementary School Attendance Boundary',
+        'kind_first': False,
+        'ider': utils.simple_namer(['SCHOOLNAME']),
+        'namer': utils.simple_namer(['SCHOOLNAME']),
+        'authority': 'DC Office of the Chief Technology Officer',
+        'domain': 'Washington, DC',
+        'last_updated': date(2011, 2, 28),
+        'href': '',
+        'notes': '',
+        'encoding': '',
+    },
+    
+    'Middle School Attendance Boundary': {
+        'file': 'MSBndyPly/MSBndyPly.shp',
+        'singular': 'Middle School Attendance Boundaries',
+        'kind_first': False,
+        'ider': utils.simple_namer(['SCHOOLNAME']),
+        'namer': utils.simple_namer(['SCHOOLNAME']),
+        'authority': 'DC Office of the Chief Technology Officer',
+        'domain': 'Washington, DC',
+        'last_updated': date(2011, 2, 28),
+        'href': '',
+        'notes': '',
+        'encoding': '',
+    },
+    
+    'Senior High School Attendance Boundary': {
+        'file': 'SHSBndyPly/SHSBndyPly.shp',
+        'singular': 'Senior High School Attendance Boundaries',
+        'kind_first': False,
+        'ider': utils.simple_namer(['SCHOOLNAME']),
+        'namer': utils.simple_namer(['SCHOOLNAME']),
+        'authority': 'DC Office of the Chief Technology Officer',
+        'domain': 'Washington, DC',
+        'last_updated': date(2011, 2, 28),
+        'href': '',
+        'notes': '',
+        'encoding': '',
+    },
+    
+    'School Election Districts': {
+        'file': 'SchEDisPly/SchEDisPly.shp',
+        'singular': 'School Election District',
+        'kind_first': False,
+        'ider': utils.simple_namer(['GIS_ID']),
+        'namer': utils.simple_namer(['NAME']),
+        'authority': 'DC Office of the Chief Technology Officer',
+        'domain': 'Washington, DC',
+        'last_updated': date(2011, 2, 28),
+        'href': '',
+        'notes': '',
+        'encoding': '',
+    },
+    
 }
