@@ -167,9 +167,9 @@ SHAPEFILES = {
         'encoding': '',
     },
     
-    'Middle School Attendance Boundary': {
+    'Middle School Attendance Boundaries': {
         'file': 'MSBndyPly/MSBndyPly.shp',
-        'singular': 'Middle School Attendance Boundaries',
+        'singular': 'Middle School Attendance Boundary',
         'kind_first': False,
         'ider': utils.simple_namer(['SCHOOLNAME']),
         'namer': utils.simple_namer(['SCHOOLNAME']),
@@ -181,9 +181,9 @@ SHAPEFILES = {
         'encoding': '',
     },
     
-    'Senior High School Attendance Boundary': {
+    'Senior High School Attendance Boundaries': {
         'file': 'SHSBndyPly/SHSBndyPly.shp',
-        'singular': 'Senior High School Attendance Boundaries',
+        'singular': 'Senior High School Attendance Boundary',
         'kind_first': False,
         'ider': utils.simple_namer(['SCHOOLNAME']),
         'namer': utils.simple_namer(['SCHOOLNAME']),
