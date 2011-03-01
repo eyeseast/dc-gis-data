@@ -24,7 +24,7 @@ class index_namer():
         out = '%s%i' % (self.prefix, self.i)
         self.i += 1
         return out
-            
+
 class simple_namer():
     """
     Name features with a joined combination of attributes, optionally passing the result through a normalizing function.
