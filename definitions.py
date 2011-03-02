@@ -52,6 +52,20 @@ SHAPEFILES = {
     #    #'srid': ''
     #},
     
+    'Cities': {
+        'file': 'DCBndyPly/DCGIS_DCBndyPly.shp',
+        'singular': 'City',
+        'kind_first': False,
+        'ider': utils.simple_namer(['CITY_NAME']),
+        'namer': utils.simple_namer(['CITY_NAME']),
+        'authority': 'DC Office of the Chief Technology Officer',
+        'domain': 'Washington, DC',
+        'last_updated': date(2011, 3, 2),
+        'href': 'http://data.dc.gov/Metadata.aspx?id=74',
+        'notes': '',
+        'encoding': '',
+    },
+    
     'Wards': {
         'file': 'Ward02Ply/Ward02Ply.shp',
         'singular': 'Ward',
