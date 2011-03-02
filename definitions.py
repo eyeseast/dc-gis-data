@@ -83,7 +83,7 @@ SHAPEFILES = {
     'ANC Districts': {
         'file': 'ANC02Ply/ANC02Ply.shp',
         'singular': 'ANC District',
-        'kind_first': False,
+        'kind_first': True,
         'ider': utils.simple_namer(['GIS_ID']),
         'namer': utils.simple_namer(['ANC_ID']),
         'authority': 'DC Office of the Chief Technology Officer',
@@ -111,7 +111,7 @@ SHAPEFILES = {
     'Census Block Groups': {
         'file': 'BlockGroupPly/BlockGroupPly.shp',
         'singular': 'Census Block Group',
-        'kind_first': False,
+        'kind_first': True,
         'ider': utils.simple_namer(['BLKGRP']),
         'namer': utils.simple_namer(['BLKGRP']),
         'authority': 'DC Office of the Chief Technology Officer',
@@ -125,7 +125,7 @@ SHAPEFILES = {
     'Census Tracts': {
         'file': 'TractPly/TractPly.shp',
         'singular': 'Census Tract',
-        'kind_first': False,
+        'kind_first': True,
         'ider': utils.simple_namer(['TRACT']),
         'namer': utils.simple_namer(['TRACT']),
         'authority': 'DC Office of the Chief Technology Officer',
@@ -152,10 +152,10 @@ SHAPEFILES = {
     
     'Voting Precincts': {
         'file': 'VotePre08Ply/VotePre08Ply.shp',
-        'singular': 'Voting Precint',
-        'kind_first': False,
+        'singular': 'Voting Precinct',
+        'kind_first': True,
         'ider': utils.simple_namer(['GIS_ID']),
-        'namer': utils.simple_namer(['NAME']),
+        'namer': utils.simple_namer(['NAME'], normalizer=lambda n: n.replace('Precinct ', '')),
         'authority': 'DC Office of the Chief Technology Officer',
         'domain': 'Washington, DC',
         'last_updated': date(2011, 2, 27),
@@ -209,7 +209,7 @@ SHAPEFILES = {
     'School Election Districts': {
         'file': 'SchEDisPly/SchEDisPly.shp',
         'singular': 'School Election District',
-        'kind_first': False,
+        'kind_first': True,
         'ider': utils.simple_namer(['GIS_ID']),
         'namer': utils.simple_namer(['NAME']),
         'authority': 'DC Office of the Chief Technology Officer',
@@ -232,5 +232,20 @@ SHAPEFILES = {
         'href': 'http://data.dc.gov/Metadata.aspx?id=187',
         'notes': '',
         'encoding': '',
+    },
+    
+    'Police Service Areas': {
+        'file': 'PolSAPly/PolSAPly.shp',
+        'singular': 'Police Service Area',
+        'kind_first': True,
+        'ider': utils.simple_namer(['GIS_ID']),
+        'namer': utils.simple_namer(['NAME']),
+        'authority': 'DC Office of the Chief Technology Officer',
+        'domain': 'Washington, DC',
+        'last_updated': date(2011, 3, 1),
+        'href': 'http://data.dc.gov/Metadata.aspx?id=187',
+        'notes': '',
+        'encoding': '',
     }
+    
 }
