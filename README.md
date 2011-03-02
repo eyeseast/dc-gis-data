@@ -1,7 +1,10 @@
 DC GIS Data
 ===========
 
-This directory contains boundary information (shapefiles) for the Washington, DC, metro area, including parts of Maryland and Virginia. All data comes from the [DC Office of the Chief Technology Officer](http://data.dc.gov), unless otherwise indicated.
+This directory contains boundary information (shapefiles) for the Washington, DC, metro area, including parts of Maryland and Virginia. Also included is a definitions.py file for use with the [TribApps Boundary Service API][1]. All data comes from the [DC Office of the Chief Technology Officer][2], unless otherwise indicated.
+
+ [1]: https://github.com/newsapps/boundaryservice "TribApps Boundary Service on GitHub"
+ [2]: http://data.dc.gov "DC Office of the Chief Technology Officer"
 
 **Included boundaries:**
 
@@ -17,3 +20,6 @@ This directory contains boundary information (shapefiles) for the Washington, DC
  - Quadrants
  - Census Tracts
  - No Fly Zones
+ - Police Districts
+ - Police Service Areas
+ - Zip Codes
